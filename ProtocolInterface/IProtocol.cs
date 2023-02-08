@@ -2,7 +2,7 @@
 
 namespace ProtocolInterface
 {
-    internal interface IProtocol
+    public interface IProtocol
     {
         /// <summary>
         /// 设备是否连接
