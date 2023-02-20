@@ -1,6 +1,6 @@
 ﻿namespace ProtocolInterface;
 
-public interface IDeviceProtocol
+public interface IProtocolConfig
 {
     string ProtocolName { get; }
 }
