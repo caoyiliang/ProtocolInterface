@@ -1,8 +1,10 @@
-﻿namespace ProtocolInterface
+﻿using Communication;
+
+namespace ProtocolInterface;
+
+public interface ICollectionProtocol : IProtocol
 {
-    public interface ICollectionProtocol : IProtocol
-    {
-        string Name { get; }
-        Task<Dictionary<string, decimal>?> ReadValueAsync(CancellationTokenSource? cancelToken = null);
-    }
+    string Name { get; }
+
+    event ActivelyPushDataEventHandler<Dictionary<string, decimal>>? OnDevicePushData;
 }
