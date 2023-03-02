@@ -6,7 +6,12 @@ public interface IDeviceProtocol : IProtocol
 {
     string Name { get; }
 
-    event ActivelyPushDataEventHandler<(DateTime, Dictionary<string, decimal>)>? OnDevicePushData;
+    event ActivelyPushDataEventHandler<(DateTime time, Dictionary<string, (decimal value, string state)> dic)>? OnDevicePushData;
 
-    Task SendData((DateTime, Dictionary<string, decimal> data) channelsDatas);
+    /// <summary>
+    /// 对外输出通道
+    /// </summary>
+    /// <param name="channelsDatas">(时间,<通道名,(值,状态)>)</param>
+    /// <returns></returns>
+    Task SendData((DateTime time, Dictionary<string, (decimal value, string state)> dic) channelsDatas);
 }
