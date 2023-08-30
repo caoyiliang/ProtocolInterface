@@ -1,6 +1,6 @@
 ﻿namespace ProtocolInterface;
 
-public enum ValueType
+public enum RegisterValueType
 {
     Float,
     UInt16,
