@@ -13,26 +13,26 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.0.2</Version>
-		<PackageReleaseNotes>修复公共库bug</PackageReleaseNotes>
+		<Version>8.0.3</Version>
+		<PackageReleaseNotes>修复推送对端连接成功的严重问题</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="..\logo.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Include="..\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="CSoft.TopPortLib" Version="8.0.2" />
+		<PackageReference Include="CSoft.TopPortLib" Version="8.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="logo.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Update="logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 </Project>
