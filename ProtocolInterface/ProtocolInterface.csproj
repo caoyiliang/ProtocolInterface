@@ -13,8 +13,8 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.0.3</Version>
-		<PackageReleaseNotes>修复推送对端连接成功的严重问题</PackageReleaseNotes>
+		<Version>8.0.4</Version>
+		<PackageReleaseNotes>对共用链路支持，解决方案：上层自行管理物理口总线</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -25,7 +25,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="8.0.3" />
+		<PackageReference Include="CSoft.TopPortLib" Version="8.0.4" />
 	</ItemGroup>
 
 	<ItemGroup>
