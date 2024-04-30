@@ -13,11 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.1.2</Version>
+		<Version>8.1.4</Version>
 		<PackageReleaseNotes>
-			1.修复异步口解析等待
-			2.异步口接口变更
-			3.异步口支持返回命令对应多个请求，使用请求帧中的特征来识别对应返回
+			异步口请求接口继承自IByteStream
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -29,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="8.1.5" />
+		<PackageReference Include="CSoft.TopPortLib" Version="8.1.6" />
 	</ItemGroup>
 
 	<ItemGroup>
