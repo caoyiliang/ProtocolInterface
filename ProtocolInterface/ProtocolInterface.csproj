@@ -13,9 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.1.4</Version>
+		<Version>8.1.5</Version>
 		<PackageReleaseNotes>
-			异步口请求接口继承自IByteStream
+			异步口提升数据校验效率
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -27,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="8.1.6" />
+		<PackageReference Include="CSoft.TopPortLib" Version="8.1.7" />
 	</ItemGroup>
 
 	<ItemGroup>
