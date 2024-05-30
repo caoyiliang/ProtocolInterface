@@ -13,9 +13,10 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.1.5</Version>
+		<Version>8.1.6</Version>
 		<PackageReleaseNotes>
-			异步口提升数据校验效率
+			异步口请求多次回复
+			修复在客户端上线通知事件中请求发生问题
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -27,7 +28,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="8.1.7" />
+		<PackageReference Include="CSoft.TopPortLib" Version="8.2.0" />
 	</ItemGroup>
 
 	<ItemGroup>
