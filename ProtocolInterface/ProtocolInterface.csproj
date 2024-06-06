@@ -13,9 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.1.8</Version>
+		<Version>8.1.9</Version>
 		<PackageReleaseNotes>
-			IPhysicalPort_Server新增接口GetClientInfos
+			调整IAsyncResponse_Server接口参数clientId为clientInfo
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -27,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="8.2.4" />
+		<PackageReference Include="CSoft.TopPortLib" Version="8.2.5" />
 	</ItemGroup>
 
 	<ItemGroup>
