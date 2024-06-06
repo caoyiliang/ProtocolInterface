@@ -13,10 +13,11 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.1.6</Version>
+		<Version>8.1.7</Version>
 		<PackageReleaseNotes>
-			异步口请求多次回复
-			修复在客户端上线通知事件中请求发生问题
+			服务端异步口请求多次回复
+			服务端异步口数据回复改接口为IAsyncResponse_Server
+			修复异步口发送日志延迟问题
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -28,7 +29,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="8.2.0" />
+		<PackageReference Include="CSoft.TopPortLib" Version="8.2.3" />
 	</ItemGroup>
 
 	<ItemGroup>
