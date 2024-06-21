@@ -11,16 +11,6 @@ public interface IProtocol_Server
     public bool IsListened { get; }
 
     /// <summary>
-    /// 打开监听
-    /// </summary>
-    Task StartAsync();
-
-    /// <summary>
-    /// 关闭监听
-    /// </summary>
-    Task StopAsync();
-
-    /// <summary>
     /// 客户端断连事件
     /// </summary>
     event ClientDisconnectEventHandler OnClientDisconnect;
@@ -39,4 +29,21 @@ public interface IProtocol_Server
     /// 收到数据事件
     /// </summary>
     event RespondedLogServerEventHandler OnReceivedData;
+
+    /// <summary>
+    /// 打开监听
+    /// </summary>
+    Task StartAsync();
+
+    /// <summary>
+    /// 关闭监听
+    /// </summary>
+    Task StopAsync();
+
+    /// <summary>
+    /// 获取客户端信息
+    /// </summary>
+    /// <param name="clientId">客户端ID</param>
+    /// <returns>客户端信息</returns>
+    Task<string?> GetClientInfos(int clientId);
 }
