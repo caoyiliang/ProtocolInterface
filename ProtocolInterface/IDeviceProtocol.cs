@@ -6,7 +6,7 @@ public interface IDeviceProtocol : IProtocol
 {
     string Name { get; }
 
-    event ActivelyPushDataEventHandler<(DateTime time, Dictionary<string, (decimal value, string state)> dic)>? OnDevicePushData;
+    event ActivelyPushDataEventHandler<(DateTime time, Dictionary<string, (decimal value, string state)> dic)> OnDevicePushData;
 
     /// <summary>
     /// 对外输出通道

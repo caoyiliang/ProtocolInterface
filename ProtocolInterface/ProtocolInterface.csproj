@@ -13,9 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.2.1</Version>
+		<Version>8.2.2</Version>
 		<PackageReleaseNotes>
-			为IRspEnumerable添加NeedCheck接口
+			新增IProtocol_Server
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
