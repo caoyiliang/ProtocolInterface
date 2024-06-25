@@ -13,9 +13,8 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.2.3</Version>
+		<Version>8.2.4</Version>
 		<PackageReleaseNotes>
-			新增IProtocol_Server
 			更新依赖
 		</PackageReleaseNotes>
 	</PropertyGroup>
@@ -28,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="8.2.8" />
+		<PackageReference Include="CSoft.TopPortLib" Version="8.2.9" />
 	</ItemGroup>
 
 	<ItemGroup>
