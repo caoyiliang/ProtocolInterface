@@ -45,5 +45,5 @@ public interface IProtocol_Server
     /// </summary>
     /// <param name="clientId">客户端ID</param>
     /// <returns>客户端信息</returns>
-    Task<string?> GetClientInfos(int clientId);
+    Task<string?> GetClientInfos(Guid clientId);
 }
