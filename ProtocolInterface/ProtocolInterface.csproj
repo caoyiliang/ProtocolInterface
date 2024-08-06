@@ -13,9 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.2.5</Version>
+		<Version>8.2.6</Version>
 		<PackageReleaseNotes>
-			Server改ClientId为Guid类型
+			`RegisterValueType` 枚举新增了两个类型：`Int16` 和 `Int32`
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
