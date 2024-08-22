@@ -8,5 +8,6 @@ public enum RegisterValueType
     Int16,
     Int32,
     sbyteA,
-    sbyteB
+    sbyteB,
+    String
 }

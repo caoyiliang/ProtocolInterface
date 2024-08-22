@@ -13,9 +13,10 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.2.6</Version>
+		<Version>8.2.7</Version>
 		<PackageReleaseNotes>
-			`RegisterValueType` 枚举新增了两个类型：`Int16` 和 `Int32`
+			修改 RegisterValueType 枚举类型
+			* 添加了 `String` 枚举值。
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
