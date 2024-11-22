@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;net8.0;net9.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<LangVersion>default</LangVersion>
 		<Nullable>enable</Nullable>
@@ -13,10 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>8.2.7</Version>
+		<Version>9.0.0</Version>
 		<PackageReleaseNotes>
-			修改 RegisterValueType 枚举类型
-			* 添加了 `String` 枚举值。
+			更新.net9
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -28,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="8.3.0" />
+		<PackageReference Include="CSoft.TopPortLib" Version="9.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
