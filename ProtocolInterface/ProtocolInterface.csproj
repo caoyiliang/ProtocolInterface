@@ -13,9 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>9.0.0</Version>
+		<Version>9.1.0</Version>
 		<PackageReleaseNotes>
-			更新.net9
+			分包队列内置高速队列
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -27,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="9.0.0" />
+		<PackageReference Include="CSoft.TopPortLib" Version="9.3.0" />
 	</ItemGroup>
 
 	<ItemGroup>
