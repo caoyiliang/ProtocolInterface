@@ -13,9 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>9.2.1</Version>
+		<Version>9.3.0</Version>
 		<PackageReleaseNotes>
-			添加服务端发送数据事件
+			更改处理队列
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -27,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="9.4.1" />
+		<PackageReference Include="CSoft.TopPortLib" Version="9.5.0" />
 	</ItemGroup>
 
 	<ItemGroup>
