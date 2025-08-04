@@ -41,4 +41,18 @@ public interface IProtocol_M2M
     /// <param name="clientId">客户端ID</param>
     /// <returns>客户端信息</returns>
     Task<string?> GetClientInfos(Guid clientId);
+
+    /// <summary>
+    /// 移除客户端
+    /// </summary>
+    /// <param name="clientId">客户端ID</param>
+    Task RemoveClientAsync(Guid clientId);
+
+    /// <summary>
+    /// 添加客户端
+    /// </summary>
+    /// <param name="hostName">目标地址</param>
+    /// <param name="port">目标端口</param>
+    /// <returns>客户端ID</returns>
+    Task<Guid> AddClientAsync(string hostName, int port);
 }

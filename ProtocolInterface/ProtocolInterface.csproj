@@ -13,9 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>9.10.5</Version>
+		<Version>9.10.6</Version>
 		<PackageReleaseNotes>
-			更新依赖
+			调整M2M接口
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
