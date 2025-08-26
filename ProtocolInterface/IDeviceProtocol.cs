@@ -1,10 +1,13 @@
 ﻿using Communication;
+using Parser.Interfaces;
 
 namespace ProtocolInterface;
 
 public interface IDeviceProtocol : IProtocol
 {
     string Name { get; }
+
+    IParser Parser { get; }
 
     event ActivelyPushDataEventHandler<(DateTime time, Dictionary<string, (decimal value, string state)> dic)> OnDevicePushData;
 
