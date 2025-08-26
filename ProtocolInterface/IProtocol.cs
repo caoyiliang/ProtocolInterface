@@ -1,5 +1,4 @@
 ﻿using Communication;
-using Parser.Interfaces;
 
 namespace ProtocolInterface;
 
@@ -9,11 +8,6 @@ public interface IProtocol
     /// 设备是否连接
     /// </summary>
     public bool IsConnect { get; }
-
-    /// <summary>
-    /// 分包器
-    /// </summary>
-    IParser Parser { get; }
 
     /// <summary>
     /// 打开串口
