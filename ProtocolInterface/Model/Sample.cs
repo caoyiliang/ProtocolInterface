@@ -1,5 +1,11 @@
 ﻿namespace ProtocolInterface.Model
 {
+    /// <summary>
+    /// 数据样品
+    /// </summary>
+    /// <param name="sampleName">样品名称 或 标识</param>
+    /// <param name="value">样品值</param>
+    /// <param name="state">样品状态</param>
     public class Sample(string sampleName, decimal value, string state)
     {
         /// <summary>

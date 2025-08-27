@@ -1,5 +1,8 @@
 ﻿namespace ProtocolInterface;
 
+/// <summary>
+/// 寄存器值类型
+/// </summary>
 public enum RegisterValueType
 {
     Float,

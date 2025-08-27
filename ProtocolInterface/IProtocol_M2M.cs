@@ -3,6 +3,9 @@ using TopPortLib;
 
 namespace ProtocolInterface;
 
+/// <summary>
+/// 多对多协议接口
+/// </summary>
 public interface IProtocol_M2M
 {
     /// <summary>

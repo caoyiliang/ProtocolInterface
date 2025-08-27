@@ -2,6 +2,9 @@
 
 namespace ProtocolInterface;
 
+/// <summary>
+/// 协议接口
+/// </summary>
 public interface IProtocol
 {
     /// <summary>

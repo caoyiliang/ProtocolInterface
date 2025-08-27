@@ -3,6 +3,9 @@ using TopPortLib;
 
 namespace ProtocolInterface;
 
+/// <summary>
+/// Server协议接口
+/// </summary>
 public interface IProtocol_Server
 {
     /// <summary>
