@@ -1,5 +1,6 @@
 ﻿using Communication;
 using Parser.Interfaces;
+using ProtocolInterface.Model;
 
 namespace ProtocolInterface;
 
@@ -9,12 +10,10 @@ public interface IDeviceProtocol : IProtocol
 
     IParser Parser { get; }
 
-    event ActivelyPushDataEventHandler<(DateTime time, Dictionary<string, (decimal value, string state)> dic)> OnDevicePushData;
+    event ActivelyPushDataEventHandler<Data> OnDevicePushData;
 
     /// <summary>
     /// 对外输出通道
     /// </summary>
-    /// <param name="channelsDatas">(时间,<通道名,(值,状态)>)</param>
-    /// <returns></returns>
-    Task SendData((DateTime time, Dictionary<string, (decimal value, string state)> dic) channelsDatas);
+    Task SendData(Data channelsDatas);
 }
