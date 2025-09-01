@@ -22,10 +22,10 @@ public interface IDeviceProtocol : IProtocol
     /// <summary>
     /// 设备数据推送事件
     /// </summary>
-    event ActivelyPushDataEventHandler<Data> OnDevicePushData;
+    event ActivelyPushDataEventHandler<List<Sample>> OnDevicePushData;
 
     /// <summary>
     /// 对外输出通道
     /// </summary>
-    Task SendData(Data channelsDatas);
+    Task SendData(List<Sample> channelsDatas);
 }
