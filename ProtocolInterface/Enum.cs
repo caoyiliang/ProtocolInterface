@@ -14,13 +14,3 @@ public enum RegisterValueType
     sbyteB,
     String
 }
-
-/// <summary>
-/// 输入输出类型
-/// </summary>
-public enum IOType
-{
-    Input,
-    Output,
-    All
-}

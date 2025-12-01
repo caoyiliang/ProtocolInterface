@@ -15,11 +15,6 @@ public interface IDeviceProtocol : IProtocol
     string Name { get; }
 
     /// <summary>
-    /// 输入输出类型
-    /// </summary>
-    IOType IOType { get; }
-
-    /// <summary>
     /// 解析器
     /// </summary>
     IParser Parser { get; }
