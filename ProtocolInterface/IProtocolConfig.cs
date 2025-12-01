@@ -9,4 +9,9 @@ public interface IProtocolConfig
     /// 协议名称
     /// </summary>
     string ProtocolName { get; }
+
+    /// <summary>
+    /// 输入输出类型
+    /// </summary>
+    IOType IOType { get; }
 }
