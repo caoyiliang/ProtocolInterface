@@ -15,6 +15,11 @@ public interface IDeviceProtocol : IProtocol
     string Name { get; }
 
     /// <summary>
+    /// 输入输出类型
+    /// </summary>
+    IOType IOType { get; }
+
+    /// <summary>
     /// 解析器
     /// </summary>
     IParser Parser { get; }
@@ -27,5 +32,5 @@ public interface IDeviceProtocol : IProtocol
     /// <summary>
     /// 对外输出通道
     /// </summary>
-    Task SendData(List<Sample> channelsDatas);
+    Task SendData(List<SendSample> channelsDatas);
 }
