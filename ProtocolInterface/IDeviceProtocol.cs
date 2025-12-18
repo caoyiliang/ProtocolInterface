@@ -20,6 +20,11 @@ public interface IDeviceProtocol : IProtocol
     IParser Parser { get; }
 
     /// <summary>
+    /// 其他配置项
+    /// </summary>
+    string OtherSetting { get; set; }
+
+    /// <summary>
     /// 设备数据推送事件
     /// </summary>
     event ActivelyPushDataEventHandler<List<Sample>> OnDevicePushData;
