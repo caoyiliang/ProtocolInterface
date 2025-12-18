@@ -24,3 +24,14 @@ public enum IOType
     Output,
     All
 }
+
+/// <summary>
+/// 界面类型
+/// </summary>
+public enum UIType
+{
+    信号量,
+    开关量,
+    Modbus,
+    Gb
+}
