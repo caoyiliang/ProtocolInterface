@@ -13,9 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>10.0.10</Version>
+		<Version>10.0.11</Version>
 		<PackageReleaseNotes>
-			设备接口变更
+			新增 RegisterValueType 枚举成员
 		</PackageReleaseNotes>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	</PropertyGroup>

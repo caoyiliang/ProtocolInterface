@@ -10,6 +10,7 @@ public enum RegisterValueType
     UInt32,
     Int16,
     Int32,
+    Double,
     sbyteA,
     sbyteB,
     String
