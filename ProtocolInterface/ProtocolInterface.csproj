@@ -13,9 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>10.0.11</Version>
+		<Version>10.0.12</Version>
 		<PackageReleaseNotes>
-			新增 RegisterValueType 枚举成员
+			依赖更新
 		</PackageReleaseNotes>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	</PropertyGroup>
@@ -28,7 +28,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="10.0.4" />
+		<PackageReference Include="CSoft.TopPortLib" Version="10.0.5" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -20,7 +20,7 @@ public interface IProtocol
     /// <summary>
     /// 关闭串口
     /// </summary>
-    Task CloseAsync(bool closePhysicalPort);
+    Task CloseAsync(bool closePhysicalPort = true);
 
     /// <summary>
     /// 对端掉线

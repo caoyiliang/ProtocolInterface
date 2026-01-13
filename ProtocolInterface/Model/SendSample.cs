@@ -22,7 +22,7 @@
         /// <summary>
         /// 样品值
         /// </summary>
-        public decimal Value { get; set; } = value;
+        public decimal? Value { get; set; } = value;
 
         /// <summary>
         /// 样品状态

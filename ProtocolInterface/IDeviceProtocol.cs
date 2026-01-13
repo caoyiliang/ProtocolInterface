@@ -32,5 +32,5 @@ public interface IDeviceProtocol : IProtocol
     /// <summary>
     /// 对外输出通道
     /// </summary>
-    Task SendData(List<SendSample> channelsDatas);
+    Task SendData(List<SendSample> channelsDatas, int? dataType);
 }
