@@ -13,7 +13,7 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>10.0.13</Version>
+		<Version>10.0.14</Version>
 		<PackageReleaseNotes>
 			依赖更新
 		</PackageReleaseNotes>
@@ -28,7 +28,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CSoft.TopPortLib" Version="10.0.5" />
+		<PackageReference Include="CSoft.TopPortLib" Version="10.0.6" />
 	</ItemGroup>
 
 	<ItemGroup>
