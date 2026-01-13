@@ -7,7 +7,7 @@
     /// <param name="sampleName">样品名称 或 标识</param>
     /// <param name="value">样品值</param>
     /// <param name="state">样品状态</param>
-    public class SendSample(DateTime sampleTime, string sampleName, decimal value, string state)
+    public class SendSample(DateTime sampleTime, string sampleName, decimal? value, string state)
     {
         /// <summary>
         /// 样品时间
