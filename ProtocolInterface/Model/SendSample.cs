@@ -33,5 +33,10 @@
         /// 样品单位
         /// </summary>
         public string? Unit { get; set; }
+
+        /// <summary>
+        /// 拓展
+        /// </summary>
+        public Dictionary<string, string> Other { get; set; } = [];
     }
 }
