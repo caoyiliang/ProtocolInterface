@@ -13,7 +13,7 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>10.0.18</Version>
+		<Version>10.0.19</Version>
 		<PackageReleaseNotes>
 			发送类拓展
 		</PackageReleaseNotes>

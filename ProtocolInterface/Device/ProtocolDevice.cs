@@ -11,9 +11,6 @@ public static class ProtocolDevice
     /// 使用串口
     /// </summary>
     /// <typeparam name="TDevice">设备类型</typeparam>
-    /// <param name="portName">串口名称</param>
-    /// <param name="baudRate">波特率</param>
-    /// <param name="parser">帧解析器</param>
     /// <param name="deviceFactory">设备工厂函数（接收超时时间）</param>
     public static IClientConfigStep<TDevice> UseSerial<TDevice>(Func<int, TDevice> deviceFactory)
         where TDevice : ProtocolDeviceBase
@@ -23,9 +20,6 @@ public static class ProtocolDevice
     /// 使用 TCP 客户端
     /// </summary>
     /// <typeparam name="TDevice">设备类型</typeparam>
-    /// <param name="host">服务器地址</param>
-    /// <param name="port">服务器端口</param>
-    /// <param name="parser">帧解析器</param>
     public static IClientConfigStep<TDevice> UseTcpClient<TDevice>(Func<int, TDevice> deviceFactory)
         where TDevice : ProtocolDeviceBase
         => new ClientBuilder<TDevice>(deviceFactory);
@@ -34,14 +28,10 @@ public static class ProtocolDevice
     /// 使用 TCP 服务端
     /// </summary>
     /// <typeparam name="TDevice">设备类型</typeparam>
-    /// <param name="host">绑定地址</param>
-    /// <param name="port">监听端口</param>
-    /// <param name="foot">帧尾字节</param>
     /// <param name="deviceFactory">设备工厂函数（接收 host, port, 超时时间）</param>
-    /// <param name="instance">用于获取正确程序集的实例（通常是设备类型所在程序集中的某个类的实例）</param>
-    public static IServerConfigStep<TDevice> UseTcpServer<TDevice>(string host, int port, Func<string, int, int, TDevice> deviceFactory)
+    public static IServerConfigStep<TDevice> UseTcpServer<TDevice>(Func<int, TDevice> deviceFactory)
         where TDevice : ProtocolServerDeviceBase
-        => new ServerBuilder<TDevice>(host, port, deviceFactory);
+        => new ServerBuilder<TDevice>(deviceFactory);
 
     private enum PortType { None, Serial, TcpClient }
 
@@ -96,17 +86,13 @@ public static class ProtocolDevice
     /// </summary>
     internal class ServerBuilder<TDevice> : IServerConfigStep<TDevice> where TDevice : ProtocolServerDeviceBase
     {
-        private readonly string _host;
-        private readonly int _port;
-        private readonly Func<string, int, int, TDevice> _deviceFactory;
+        private readonly Func<int, TDevice> _deviceFactory;
         private int _timeoutMs = 5000;
         private Func<string, Task>? _onClientConnected;
         private Func<string, Task>? _onClientDisconnected;
 
-        public ServerBuilder(string host, int port, Func<string, int, int, TDevice> deviceFactory)
+        public ServerBuilder(Func<int, TDevice> deviceFactory)
         {
-            _host = host;
-            _port = port;
             _deviceFactory = deviceFactory;
         }
 
@@ -130,7 +116,7 @@ public static class ProtocolDevice
 
         public TDevice Build()
         {
-            var device = _deviceFactory(_host, _port, _timeoutMs);
+            var device = _deviceFactory(_timeoutMs);
 
             if (_onClientConnected != null)
                 device.OnClientConnect += clientId => _onClientConnected(clientId.ToString());
