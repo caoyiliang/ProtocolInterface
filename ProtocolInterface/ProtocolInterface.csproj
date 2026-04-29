@@ -13,9 +13,9 @@
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/caoyiliang/ProtocolInterface</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/caoyiliang/ProtocolInterface</PackageProjectUrl>
-		<Version>10.0.17</Version>
+		<Version>10.1.0</Version>
 		<PackageReleaseNotes>
-			发送类拓展
+			AOT
 		</PackageReleaseNotes>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	</PropertyGroup>
@@ -27,8 +27,13 @@
 		</None>
 	</ItemGroup>
 
+	<PropertyGroup Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">
+		<IsAotCompatible>true</IsAotCompatible>
+		<EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+	</PropertyGroup>
+
 	<ItemGroup>
-	  <PackageReference Include="CSoft.Communication.Builder" Version="10.1.2" />
+	  <PackageReference Include="CSoft.Communication.Builder" Version="10.1.5" />
 	</ItemGroup>
 
 	<ItemGroup>
